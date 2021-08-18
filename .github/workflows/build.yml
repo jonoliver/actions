@@ -1,0 +1,13 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - 'main'
+jobs:
+  build:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Build
+        run: |
+          exit 1
