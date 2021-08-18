@@ -10,4 +10,10 @@ jobs:
     steps:
       - name: Build
         run: |
-          exit 0
+          sleep 10 && exit 0
+      - name: Dispatch Build Success
+        uses: peter-evans/repository-dispatch@v1
+        with:
+          token: ${{ secrets.REPO_ACCESS_TOKEN }}
+          repository: jonoliver/actions
+          event-type: build-success
