@@ -10,4 +10,4 @@ jobs:
     steps:
       - name: Build
         run: |
-          exit 1
+          exit 0
