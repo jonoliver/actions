@@ -1,0 +1,13 @@
+name: Workflow Run
+
+on:
+  workflow_run:
+    workflows: ["Build"]
+    types: [completed]
+jobs:
+  manual:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Manual
+        run: |
+          echo ran
