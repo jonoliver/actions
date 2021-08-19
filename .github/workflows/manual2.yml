@@ -1,0 +1,16 @@
+name: Manual
+
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch'
+        required: true
+        default: 'main'
+jobs:
+  manual:
+    runs-on: ubuntu-18.04
+    steps:
+      - name: Manual
+        run: |
+          echo ${{ github.event.inputs.branch }}
