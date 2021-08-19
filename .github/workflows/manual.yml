@@ -13,4 +13,4 @@ jobs:
     steps:
       - name: Manual
         run: |
-          exit 0
+          echo ${{ github.event.inputs.branch }}
