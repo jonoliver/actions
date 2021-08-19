@@ -10,7 +10,7 @@ jobs:
     steps:
       - name: Build
         run: |
-          sleep 10 && exit 0
+          exit 0
       - name: Dispatch Build Success
         uses: peter-evans/repository-dispatch@v1
         with:
