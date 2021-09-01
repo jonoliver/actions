@@ -13,3 +13,4 @@ jobs:
       - name: Manual
         run: |
           echo ${GITHUB_REF}
+          echo ${GITHUB_SHA}
